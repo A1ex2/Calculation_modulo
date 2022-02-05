@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -11,9 +13,11 @@
         android:id="@+id/textFormula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#0000"
         android:text="@string/Formula"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
@@ -23,9 +27,11 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="@string/n"
         android:gravity="center"
-        android:inputType="number" />
+        android:hint="@string/n"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/teal_700" />
 
     <EditText
         android:id="@+id/editNZK"
@@ -33,9 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
-        android:hint="@string/nzk"
         android:gravity="center"
-        android:inputType="number" />
+        android:hint="@string/nzk"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/teal_700" />
 
     <EditText
         android:id="@+id/editPR"
@@ -45,7 +53,9 @@
         android:ems="10"
         android:gravity="center"
         android:hint="@string/pr"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/teal_700" />
 
     <Button
         android:id="@+id/buttonResult"
@@ -55,23 +65,32 @@
         android:layout_marginTop="41dp"
         android:text="@string/result" />
 
-    <TextView
-        android:id="@+id/textResult"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/textResult2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:background="#0000"
+        android:orientation="horizontal">
 
+        <ImageButton
+            android:id="@+id/btnCopy"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#0000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/copy" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </LinearLayout>

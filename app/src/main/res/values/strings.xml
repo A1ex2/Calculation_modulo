@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">Calculation modulo</string>
+    <string name="app_name">F=mod</string>
     <string name="Formula">Z=modN(NZK+PR-2000)+1</string>
     <string name="nzk">Номер зачетки(NZK)</string>
     <string name="pr">Год получения задания(РR)</string>
-    <string name="result">Получить номер задания</string>
+    <string name="result">Расчет номера</string>
     <string name="n">Количество вопросов(N)</string>
+    <string name="result_toast">Ваш номер задания </string>
+    <string name="text_copied">Расчет скопирован в буфер обмена</string>
+    <string name="text_error">Заполните поле </string>
 </resources>
